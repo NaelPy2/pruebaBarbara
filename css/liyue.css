@@ -1,0 +1,362 @@
+/*****************************************************************************************************************************/
+/* Liyue Proyecto 01                                                                          */
+/* Autor: David Pucheta Posdeley                                                                                             */
+/* Version 1.0 
+/*****************************************************************************************************************************/
+@font-face {
+    font-family: titulo;
+    src: url('../fonts/Abril_Fatface/AbrilFatface-Regular.ttf');
+}
+
+@font-face {
+    font-family: subTitulos ;
+    src: url("../fonts/Exo_2/Exo2-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: body;
+    src: url('../fonts/textos/LibreBaskerville-Regular.ttf');
+}
+
+@font-face {
+    font-family: encabezados;
+    src: url("../fonts/Lobster/Lobster-Regular.ttf");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:body;
+    margin: 0;
+    padding: 0;
+    background-color: #BD6A37;
+    
+}
+/****************************barra navegacion*******************/
+#barraNavegacion {
+    position:sticky; /* se queda "pegado" */
+    top:0;           /* a la parte superior */
+    z-index: 99;     /* podría tener 98 capas por debajo */
+    opacity: 0.5; 
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.fa-arrow-up {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+
+#arriba {color:black;}              
+
+/* Add a black background color to the top navigation */
+.topnav {
+    font-family: subTitulos;
+    background-color: rgb(250, 235, 215) ;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    border-radius: 15px;
+}
+
+ /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  /* Change the color of links on hover */
+
+#barraNavegacion:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+.topnav a:hover {
+    
+    background-color: #CC8E47;
+    color: black;
+}
+
+ /* Add an active class to highlight the current page */
+.topnav a.active {
+    color: white;
+}
+
+ /* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+/****************************************************titulo***************************************************************/
+#nombreTitulo{
+    font-family: titulo;
+    font-size: 6rem;
+}
+#subNombre{
+    font-family: subTitulos;
+    font-size: 1.5rem;
+
+}
+
+/********************************************************wrapper**********************************************************/
+#wrapper{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+/*******************************************************contenido********************************************************/
+.grid2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.col img{
+    width: 100%;
+}
+/**************************how to tabs w3School**************************************************************************/
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: rgb(250, 235, 215) ;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    opacity: 0.8; 
+    font-family: subTitulos;
+    border-radius: 15px;
+}
+.tab:hover{
+    opacity: 1;
+    transition: .5s;
+}
+
+.col button{
+    font-family: subTitulos;
+}
+
+  /* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+  /* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #CC8E47;
+    
+}
+
+  /* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+  /* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    
+    border-top: none;
+}
+
+
+
+/***********************************************FOOTER********************************************************************/
+.tituloEnlace{
+    font-family: encabezados;
+    padding-bottom: 8px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+#footer{
+    background-color: #CC8E47 ;
+}
+
+#qFooter{
+    
+    text-align: center;
+    font-family: titulo;
+    color: antiquewhite;
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 3%;
+
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.cFooter img{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.listaFooter a{
+    font-family: subTitulos;
+    text-decoration: none;
+    color: rgb(12, 70, 73);
+    font-size: 1.3rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    width: 95%;
+    text-align: center;
+    
+}
+
+.enlaces:hover {
+    background-color: #BD6A37;
+    color:white;
+    transition: 0.5s;
+
+}
+
+.fa {
+    box-sizing:content-box;
+    display:block;
+    padding: 20px;
+    margin: 5px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 15%;
+    
+}
+.fa:hover{
+    background-color: #BD6A37;
+    color:white;
+    transition: 0.5s;
+}
+
+#redesSociales{
+    text-align: center;
+
+}
+.gridSocial{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.colSocial a{
+    text-decoration: none;
+    color: black;
+
+}
+/***********************************************Media queries*************************************************************/
+@media only screen and (width<=800px) {
+
+    .grid4{
+        grid-template-columns: 50% 50%;
+    }
+    
+    .grid2{
+        grid-template-columns: 100%;
+    }
+    #qFooter{
+        font-size: 2rem;
+    }
+
+    .grid3{
+        grid-template-columns: 100%;
+        width: 65%;
+        margin: auto;
+        
+
+    }
+
+}
+
+@media only screen and (width<=600px) {
+
+    .grid4{
+        grid-template-columns: 100%;
+        width: 70%;
+        margin: auto;
+    }
+
+    .grid2{
+        grid-template-columns: 100%;
+    }
+    #qFooter{
+        font-size: 1.6rem;
+    }
+
+    .grid3{
+        grid-template-columns: 100%;
+        width: 65%;
+        margin: auto;
+        
+
+    }
+    
+}
+
+@media only screen and (width<=400px) {
+    #wrapper{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    #titulo{
+        font-size: 4.5rem;
+    }
+
+    .grid4{
+        grid-template-columns: 100%;
+        width: 95%;
+        margin: auto;
+    }
+
+    .grid2{
+        grid-template-columns: 100%;
+    }
+
+    #qFooter{
+        font-size: 1.6rem;
+    }
+    .gridSocial{
+        grid-template-columns: 50% 50%;
+    }
+
+    .grid3{
+        grid-template-columns: 100%;
+        width: 65%;
+        margin: auto;
+        
+
+    }
+    
+    .topnav a{
+        font-size: 0.9rem;
+    }
+    .nombreNoticias{
+        font-size: 1.5rem;
+    }
+    .titulo_section{
+        font-size: 3.3rem;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+    #titulo_regiones{
+        padding-bottom: 35px;
+    }
+    
+    
+}

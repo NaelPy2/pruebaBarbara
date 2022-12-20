@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="images/favicon.ico" >
+
+        
+        <title>Teyvat Database</title>
+    </head>
+
+    <body>
+        <header>
+            
+        </header>
+
+        <div  id="wrapper">
+
+            
+            
+            
+
+            <section id="hero">
+                <div id="titulo">
+                    <p>Academia de Sumeru</p>
+                </div>
+                
+            </section>
+            <!--He colocado la barra de navegacion abajo porque queria que se apreciase la imagen principal de la hero section sin ningun problema-->
+
+            <section id="barraNavegacion">
+                <div class="topnav" id="myTopnav">
+                    <a href="#">Inicio</a>
+                    <a href="#intro">Noticias</a>
+                    <a href="#regiones">Regiones</a>
+                    <a href="#footer">Contacto</a>
+                    
+                </div>
+                <a href="#" id="arriba"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+                
+            </section>
+            <section  class="textos" id="intro">
+
+                <div id="titulo_noticias" class="titulo_section">
+                    Noticias
+                </div>
+
+                <div class="grid2">
+                    <div  class="col2">
+
+                        <!--Slides de fotos tomado de Snipper de w3School-->
+
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+
+                            <!-- Full-width images with number and caption text -->
+                            <div class="mySlides fade">
+                                <img src="./images/1663337192_240136_1663337313_sumario_normal.jpg" style="width:100%">
+                                <div class="text">Oasis en el desierto</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="./images/image-2-3840x2160-75c677dd1705.jpg" style="width:100%">
+                                <div class="text">Sede de La Academia</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="./images/image-1-3840x2160-6fb63d0b460b.jpg" style="width:100%">
+                                <div class="text">Afueras de Sumeru</div>
+                            </div>
+
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="col2">
+                        <div class="listas">
+                            <ul>
+                                <li>
+                                    <div class="nombreNoticias">
+                                        Se descubre agua en mitad del desierto <br>
+                                    </div>
+                                    
+                                    <p> Un comerciante de camino al mausoleao del rey Deshret se ha encontrado con un oasis al que las autoridades han llamado El oasis de Sobek</p>
+                                    <br>
+                                </li>
+                                <li>
+                                    <div class="nombreNoticias">
+                                        Reformas en la Academia <br>
+                                    </div>
+                                    
+                                    <p> Se han terminado las reformas en la Academia, cumpliendo de esta manera las ultimas peticiones de la reina menor Kusanali</p>
+                                    <br>
+                                </li>
+                                <li>
+                                    <div class="nombreNoticias">
+                                        Concurso de fotografia <br>
+                                    </div>
+                                    
+                                    <p> Tenemos ganador del ultimo concurso de fotografia que habia dado comienzo el dia 24 de Octubre, el ganador de este año es el mismisimo jefe de los guardabosques Tighnari</p>
+                                    <br>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <section class="textos" id="regiones">
+                <div id="titulo_regiones" class="titulo_section">
+                    Regiones
+                </div>
+                <div class="grid4">
+                    <div class="col4">
+                        <div  id="mondstadt" class="card">
+                            <a href="./mondstadt.html"><img src="./images/Emblema_Mondstadt.png" alt="logo de Mondstadt"></a>
+                            <div class="container">
+                                <div class="nombreRegiones">
+                                    Mondstadt 
+                                </div>
+                                <br> La ciudad de la libertad
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col4">
+                        <div id="liyue" class="card">
+                            <a href="./liyue.html"><img src="./images/Emblema_Liyue.png" alt="logo de Liyue"></a>
+                            <div class="container">
+                                <div class="nombreRegiones">
+                                    Liyue
+                                </div>
+                                <br> La ciudad de los contratos
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col4">
+                        <div id="inazuma" class="card">
+                            <a href="./inazuma.html"><img src="./images/Emblema_Inazuma.png" alt="logo de Inazuma"></a>
+                            <div class="container">
+                                <div class="nombreRegiones">
+                                    Inazuma 
+                                </div>
+                                <br> La ciudad de la eternidad
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col4">
+                        <div id="sumeru" class="card">
+                            <a href="./sumeru.html"><img src="./images/Emblema_Sumeru.png" alt="logo de Sumeru"></a>
+                            <div class="container">
+                                <div class="nombreRegiones">
+                                    Sumeru 
+                                </div>
+                                <br> La ciudad de la sabiduria
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id = "footer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(117, 168, 158)" fill-opacity="1" d="M0,160L15,176C30,192,60,224,90,229.3C120,235,150,213,180,202.7C210,192,240,192,270,160C300,128,330,64,360,64C390,64,420,128,450,133.3C480,139,510,85,540,74.7C570,64,600,96,630,128C660,160,690,192,720,176C750,160,780,96,810,69.3C840,43,870,53,900,69.3C930,85,960,107,990,144C1020,181,1050,235,1080,234.7C1110,235,1140,181,1170,176C1200,171,1230,213,1260,234.7C1290,256,1320,256,1350,224C1380,192,1410,128,1425,96L1440,64L1440,0L1425,0C1410,0,1380,0,1350,0C1320,0,1290,0,1260,0C1230,0,1200,0,1170,0C1140,0,1110,0,1080,0C1050,0,1020,0,990,0C960,0,930,0,900,0C870,0,840,0,810,0C780,0,750,0,720,0C690,0,660,0,630,0C600,0,570,0,540,0C510,0,480,0,450,0C420,0,390,0,360,0C330,0,300,0,270,0C240,0,210,0,180,0C150,0,120,0,90,0C60,0,30,0,15,0L0,0Z"></path></svg>
+                <div id="qFooter"><q>Si el destino es la sabiduría final, entonces tu futuro será el destino final</q></div>
+                <footer>
+
+                    <div class="grid3">
+                        <div class="col3">
+                            <div class="cFooter">
+                                <a href="#"><img src="images/Sumeru_Akademiya_Emblem.png" alt="Emblema de la Akademia"></a>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="cFooter">
+                                <div class="tituloEnlace">Contacta con nosotros</div>
+                                <div id="redesSociales">
+                                    <div class="gridSocial">
+                                        <div class="colSocial">
+                                            <a href="https://twitter.com/genshinimpactes?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter-square" style="font-size:48px"  aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="colSocial">
+                                            <a href="https://es-es.facebook.com/genshinimpact.es/" target="_blank" ><i class="fa fa-facebook-square" style="font-size:48px" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="colSocial">
+                                            <a href="https://www.instagram.com/genshinimpact/?hl=es" target="_blank"><i class="fa fa-instagram" style="font-size:48px" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="colSocial">
+                                            <a href="https://www.youtube.com/@GenshinImpact" target="_blank"><i class="fa fa-youtube-play" style="font-size:48px" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div   class="col3">
+                            <div class="cFooter">
+                                <div class="tituloEnlace">Paginas que te podrían interesar</div>
+                                <div class="listaFooter">
+                                    
+                                    <a class="enlaces" href="https://genshin.hoyoverse.com/es/home" target="_blank">Sitio oficial de Genshin Impact</a> <br>
+                                
+                                
+                                    <a class="enlaces" href="https://genshin.honeyhunterworld.com/?lang=EN" target="_blank">Guias y consejos</a> <br>
+                                
+                                
+                                    <a class="enlaces" href="https://cultura-gamer.com/genshin-impact-1/mapa/" target="_blank">Por si se te pierde algo</a> <br>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </footer>
+            </section>
+
+
+        </div>
+
+    </body>
+    <script src="./JS/slides.js"></script>
+    
+</html>

@@ -1,0 +1,529 @@
+/*****************************************************************************************************************************/
+/* Index Proyecto 01                                                                          */
+/* Autor: David Pucheta Posdeley                                                                                             */
+/* Version 1.0 
+/*****************************************************************************************************************************/
+@font-face {
+    font-family: titulo;
+    src: url('../fonts/Abril_Fatface/AbrilFatface-Regular.ttf');
+}
+
+@font-face {
+    font-family: subTitulos ;
+    src: url("../fonts/Exo_2/Exo2-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: body;
+    src: url('../fonts/textos/LibreBaskerville-Regular.ttf');
+}
+
+@font-face {
+    font-family: encabezados;
+    src: url("../fonts/Lobster/Lobster-Regular.ttf");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:body;
+    margin: 0;
+    padding: 0;
+    background-color: #5a8a80 ;
+}
+.textos{
+    padding: 4% 2%;
+}
+/*
+.titulo_section{
+    
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+*/
+.titulo_section{
+
+    font-family: encabezados;
+
+    color: #D5E2D6;
+    width: auto;
+    
+    text-align: center;
+    line-height: 50px;
+    font-size: 5rem;
+    padding-top: 10px ;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    
+    /*-----------------------*/
+    text-shadow: 1px 1px #4A744D, 2px 2px #4A744D, 3px 3px #4A744D, 4px 4px #4A744D, 5px 5px #4A744D, 6px 6px #4A744D, 7px 7px #4A744D, 8px 8px #4A744D, 9px 9px #4A744D, 10px 10px #4A744D, 11px 11px #4A744D, 12px 12px #4A744D, 13px 13px #4A744D, 14px 14px #4A744D, 15px 15px #4A744D;
+}
+/****************************barra navegacion*******************/
+#barraNavegacion {
+    position:sticky; /* se queda "pegado" */
+    top:0;           /* a la parte superior */
+    z-index: 99;     /* podría tener 98 capas por debajo */
+    opacity: 0.5; 
+    text-align: center;
+    
+}
+
+.fa-arrow-up {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+}
+
+#arriba {color:black;}              
+
+/* Add a black background color to the top navigation */
+.topnav {
+    font-family: subTitulos;
+    background-color: rgb(250, 235, 215) ;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content:space-around
+}
+
+ /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  /* Change the color of links on hover */
+
+#barraNavegacion:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+.topnav a:hover {
+    
+    background-color: rgb(68, 119, 136);
+    color: black;
+}
+
+ /* Add an active class to highlight the current page */
+.topnav a.active {
+    color: white;
+}
+
+ /* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} 
+
+
+
+
+/****************************Hero section***********************/
+#hero{
+    background-image: url("../images/image-3-3840x2160-66f95019dcca.jpg");
+    height:100vh ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    
+}
+
+
+#titulo{
+    font-family: titulo;
+    font-size: 5.8rem;
+    color: rgb(255, 255, 255);
+    width:100% ;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    background-color: rgba(221, 221, 199, 0.197);
+    backdrop-filter: blur(2px);
+    border: 3px solid white;
+}
+
+/******************************novedades************************/
+
+#titulo_noticias{
+    border: 5px solid white;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.col2 li{
+    margin: 10px;
+}
+
+.slideshow-container{
+    border: 5px solid white;
+}
+
+.nombreNoticias{
+    font-family: subTitulos;
+    font-size: 2rem;
+
+}
+
+/* slides de fotos */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+  /* Hide the images by default */
+.mySlides {
+    display:none;
+}
+
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+  /* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+  /* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/******************************Regiones*************************/
+.nombreRegiones{
+    font-family: subTitulos;
+    font-size: 1.2rem;
+}
+
+#titulo_regiones{
+    
+    border: 5px solid  #475e5a;
+    padding-bottom: 55px;
+    
+}
+
+.grid4{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.card img{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.787);
+    height: 340px;
+    transition: 2s;
+}
+
+.card{
+    border:5px solid rgba(0, 0, 0, 0.787);
+    
+}
+
+.col4{
+    margin: 10px;
+
+}
+
+.container{
+    text-align: center;
+    padding: 10px;
+}
+/*
+#mondstadt img:hover{
+    
+    background: linear-gradient(0deg, rgba(102,183,232,1) 0%, rgba(57,200,169,1) 100%);
+}
+*/
+#mondstadt img:hover{
+    transition: 1s;
+    background: rgb(0,92,147);
+    background: linear-gradient(0deg, rgba(0,92,147,1) 0%, rgba(51,182,168,1) 47%, rgba(102,183,232,1) 97%);
+}
+
+#liyue img:hover{
+    transition: 1s;
+    background: rgb(187,190,82);
+    background: linear-gradient(0deg, rgba(187,190,82,1) 0%, rgba(182,137,51,1) 35%, rgba(147,66,0,1) 100%);    
+}
+
+#inazuma img:hover{
+    transition: 1s;
+    background: rgb(170,82,190);
+    background: linear-gradient(0deg, rgba(170,82,190,1) 0%, rgba(123,51,182,1) 35%, rgba(70,45,152,1) 100%);
+}
+/*
+#sumeru img:hover{
+    background: rgb(210,178,59);
+    background: linear-gradient(0deg, rgba(210,178,59,1) 0%, rgba(112,185,80,1) 62%, rgba(62,147,84,1) 100%);
+}
+*/
+#sumeru img:hover{
+    transition: 1s;
+    background: rgb(145,123,40);
+    background: linear-gradient(0deg, rgba(145,123,40,1) 0%, rgba(102,170,72,1) 60%, rgba(62,147,84,1) 100%);
+}
+
+#regiones{
+    background-color:rgb(117, 168, 158);
+    
+}
+
+/***********************************************FOOTER********************************************************************/
+.tituloEnlace{
+    font-family: encabezados;
+    padding-bottom: 8px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+#qFooter{
+    
+    text-align: center;
+    font-family: titulo;
+    color: antiquewhite;
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 3%;
+
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.cFooter img{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.listaFooter a{
+    font-family: subTitulos;
+    text-decoration: none;
+    color: rgb(12, 70, 73);
+    font-size: 1.3rem;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    width: 95%;
+    text-align: center;
+    
+}
+
+.enlaces:hover {
+    background-color: rgb(68, 119, 136);
+    color:white;
+    transition: 0.5s;
+
+}
+
+.fa {
+    box-sizing:content-box;
+    display:block;
+    padding: 20px;
+    margin: 5px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 15%;
+    
+}
+.fa:hover{
+    background-color: rgb(68, 119, 136);
+    color:white;
+    transition: 0.5s;
+}
+
+#redesSociales{
+    text-align: center;
+
+}
+.gridSocial{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.colSocial a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+
+
+/***********************************************Media queries*************************************************************/
+@media only screen and (width<=800px) {
+
+    .grid4{
+        grid-template-columns: 50% 50%;
+    }
+    
+    .grid2{
+        grid-template-columns: 100%;
+    }
+    #qFooter{
+        font-size: 2rem;
+    }
+
+    .grid3{
+        grid-template-columns: 100%;
+        width: 65%;
+        margin: auto;
+        
+
+    }
+
+}
+
+@media only screen and (width<=600px) {
+
+    .grid4{
+        grid-template-columns: 100%;
+        width: 70%;
+        margin: auto;
+    }
+
+    .grid2{
+        grid-template-columns: 100%;
+    }
+    #qFooter{
+        font-size: 1.6rem;
+    }
+
+    .grid3{
+        grid-template-columns: 100%;
+        width: 65%;
+        margin: auto;
+        
+
+    }
+    
+}
+
+@media only screen and (width<=400px) {
+
+    #titulo{
+        font-size: 4.5rem;
+    }
+
+    .grid4{
+        grid-template-columns: 100%;
+        width: 95%;
+        margin: auto;
+    }
+
+    .grid2{
+        grid-template-columns: 100%;
+    }
+
+    #qFooter{
+        font-size: 1.6rem;
+    }
+    .gridSocial{
+        grid-template-columns: 50% 50%;
+    }
+
+    .grid3{
+        grid-template-columns: 100%;
+        width: 65%;
+        margin: auto;
+        
+
+    }
+    
+    .topnav a{
+        font-size: 0.9rem;
+    }
+    .nombreNoticias{
+        font-size: 1.5rem;
+    }
+    .titulo_section{
+        font-size: 3.3rem;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+    #titulo_regiones{
+        padding-bottom: 35px;
+    }
+    
+    
+}
